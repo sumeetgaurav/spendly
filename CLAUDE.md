@@ -1,10 +1,10 @@
 CLAUDE.md
 
 
-Project overview
+## Project overview
 Spendly is a lightweight personal expense tracker built with Flask and SQLite.
 
-Architecture
+## Architecture
 spendly/
 ├── app.py              # All routes — single file, no blueprints
 ├── database/
@@ -19,7 +19,8 @@ spendly/
 │   └── js/
 │       └── main.js         # Vanilla JS only
 └── requirements.txt
-Where things belong:
+
+## Where things belong:
 
 New routes → app.py only, no blueprints
 DB logic → database/db.py only, never inline in routes
@@ -74,7 +75,7 @@ GET /expenses/<id>/edit	Stub — Step 8
 GET /expenses/<id>/delete	Stub — Step 9
 Do not implement a stub route unless the active task explicitly targets that step.
 
-Warnings and things to avoid
+## Warnings and things to avoid
 Never use raw string returns for stub routes once a step is implemented — always render a template
 Never hardcode URLs in templates — always use url_for()
 Never put DB logic in route functions — it belongs in database/db.py
